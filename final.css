@@ -1,0 +1,510 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* Video PC */
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#video-small {
+    display: none;
+}
+
+
+/* Navbar Styling */
+/* Navbar Brand */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: cursive;
+}
+
+.brand-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white; /* Default color */
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.brand-title:hover {
+    color: #ff6347; /* Pinkish color for larger screens */
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .brand-title:hover {
+        color: #800080; /* Purplish color for smaller screens */
+    }
+}
+
+/* Navbar Links */
+.navbar-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    margin: 0;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #ff6347; /* Pinkish color for larger screens */
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .brand-title:hover {
+        color: #800080; /* Purplish color for smaller screens */
+    }
+
+    .navbar-links a:hover {
+        color: #800080; /* Purplish color for smaller screens */
+    }
+}
+
+/* Menubar */
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.toggle-button .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+
+/* Menubar Close Button */
+.close-button {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2.5em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Gap for Nvbar Links */
+@media (min-width: 769px) {
+    .navbar-links ul {
+        gap: 60px; /* Increase gap for larger screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 1000;
+    }
+/* Menubar Links */
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0; /* No gap for smaller screens */
+    }
+
+    .navbar-links li {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .close-button {
+        display: block;
+        font-size: 2.5em; /* Make the close button thicker */
+    }
+/* Video Phones */
+    #video-large {
+        display: none;
+    }
+
+    #video-small {
+        display: block;
+        transform: scale(2); /* Zoom in the video by 2x */
+    }
+}
+
+/* Button styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust height as needed */
+    opacity: 1; /* Temporarily set to 1 to force visibility */
+    transition: opacity 0.5s ease;
+    margin-top: 10px; /* Adjust margin as needed */
+    font-family: cursive;
+    background: #f7f7f7;
+}
+
+#visit-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #ff6347; /* Default background color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: cursive;
+}
+
+@media (max-width: 768px) {
+    #visit-button {
+        background-color: #800080; /* Background color for smaller screens */
+    }
+}
+
+#visit-button:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* General section styles */
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* About Us Section */
+/* About Us Section */
+.about-us {
+    padding: 60px 20px;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: cursive;
+}
+
+.about-us p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: cursive;
+}
+
+.about-us a {
+    color: #ff69b4; /* Pinkish color for larger screens */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.about-us a:hover {
+    color: #ff1493; /* Darker pinkish color on hover for larger screens */
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-us a {
+        color: #9370db; /* Purplish color for smaller screens */
+    }
+
+    .about-us a:hover {
+        color: #7b68ee; /* Darker purplish color on hover for smaller screens */
+    }
+}
+
+
+/* Team Members Section */
+.team-section {
+    padding: 60px 20px;
+    background: #fff;
+    text-align: center;
+    font-family: cursive;
+}
+
+.team-section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    font-family: cursive;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-family: cursive;
+}
+
+.member {
+    background: #f7f7f7;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.member-img {
+    width: 150px; /* Increase the size of the image */
+    height: 150px; /* Match the height to width */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    image-rendering: auto; /* Ensure optimal rendering */
+}
+
+.member:hover .member-img {
+    transform: scale(1.1); /* Enlarge the image on hover */
+}
+
+.member h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: cursive;
+}
+
+.member p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    font-family: cursive;
+    background: #eaeaea;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.member p:first-letter {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Services section */
+/* Services Section */
+.services-section {
+    padding: 60px 20px;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    font-family: cursive;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.service-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: cursive;
+}
+
+.service p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    font-family: cursive;
+}
+
+/* Hover Effect */
+.service:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+}
+
+.service:hover .service-img {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+
+/* Contact form styles */
+/* Contact form styles */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: cursive; /* Set the font family to cursive */
+}
+
+.contact-section h2 {
+    color: #333;
+
+}
+
+.contact-form label,
+.contact-form textarea,
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1em;
+    font-family: cursive;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ff1493;
+}
+
+@media (max-width: 768px) {
+    .contact-form button{
+        background-color: #940594;
+    }
+
+    .contact-form button:hover{
+        background-color: #800080;
+    }
+
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: cursive;
+    margin-top: 40px;
+}
+
+.footer a {
+    color: #ff6347; /* Pinkish color for larger screens */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ff1493; /* Darker pinkish color on hover for larger screens */
+    text-decoration: underline;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 16px;
+    font-family: cursive;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer a {
+        color: #9370db; /* Purplish color for smaller screens */
+    }
+
+    .footer a:hover {
+        color: #7b68ee; /* Darker purplish color on hover for smaller screens */
+    }
+}
