@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMNI Studio</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <header>
+        <!-- Video PC -->
+        <video class="video-bg" autoplay muted loop id="video-large">
+            <source src="1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Video Phones -->
+        <video class="video-bg" autoplay muted loop id="video-small">
+            <source src="2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Navbar Title -->
+        <nav class="navbar">
+            <a href="https://theomnistudios.blogspot.com/" class="brand-title">OMNI</a>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <!-- Navbar Links -->
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#team">Our Members</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <!-- Menubar Close Button -->
+                <a href="#" class="close-button">&times;</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Button Page Visit -->
+    <div class="button-container">
+        <a href="https://theomnistudios.blogspot.com" target="_blank">
+            <button id="visit-button" class="reveal-button">Visit Full Site</button>
+        </a>
+    </div>
+    
+
+    <!-- About Us Section -->
+    <section id="about" class="about-us reveal">
+        <h2>About Us</h2>
+        <p>
+            Welcome to The Omni Studio, your ultimate destination for enjoying your favorite anime in Urdu and Hindi. We are passionate about bringing the magic of anime to a wider audience by dubbing popular series in languages that resonate with you. Our team of dedicated voice actors and sound engineers work tirelessly to ensure that every episode delivers the same excitement and emotion as the original. Join us on this exciting journey as we bridge cultures and bring anime closer to home. Dive into a world of adventure, drama, and fun with <a href="https://theomnistudios.blogspot.com/" target="_blank">The Omni Studio</a>!
+        </p>
+    </section>
+
+    <!-- Our Team Members Section -->
+    <section id="team" class="section team-section reveal">
+        <h2>Our Team Members</h2>
+        <div class="team-members">
+            <div class="member">
+                <img src="member1.jfif" alt="Ali" class="member-img">
+                <h3>Ali</h3>
+                <p>Expert in dubbing, scripting, soundtrack creation, professional graphic designing, and web development.</p>
+            </div>
+            <div class="member">
+                <img src="member2.jfif" alt="Zulfqar" class="member-img">
+                <h3>Zulfqar</h3>
+                <p>Skilled in dubbing, scripting, soundtrack creation, and professional graphic designing.</p>
+            </div>
+            <div class="member">
+                <img src="member3.jfif" alt="Hafeez" class="member-img">
+                <h3>Hafeez</h3>
+                <p>Specialist in dubbing, scripting, and soundtrack creation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services-section reveal">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <img src="service1.jfif" alt="Dubbing Service" class="service-img">
+                <h3>Dubbing</h3>
+                <p>We provide high-quality dubbing services, ensuring that your favorite anime is brought to life in Urdu and Hindi with authentic and engaging voiceovers.</p>
+            </div>
+            <div class="service">
+                <img src="service2.jfif" alt="Scripting Service" class="service-img">
+                <h3>Scripting</h3>
+                <p>Our team excels in scripting, delivering well-crafted dialogues that maintain the essence of the original anime while making it relatable to the local audience.</p>
+            </div>
+            <div class="service">
+                <img src="service3.jfif" alt="Soundtracking Service" class="service-img">
+                <h3>Soundtracking</h3>
+                <p>We offer professional soundtracking services, creating immersive soundscapes that enhance the overall viewing experience and bring the anime world closer to you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+ <!-- Contact Section -->
+<section id="contact" class="section contact-form">
+    <h2>Contact Us</h2>
+    <form action="mailto:alithedubster@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name.." required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email.." required>
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+        
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 <a href="https://www.instagram.com/theomnistudio" target="_blank">The Omni Studio</a>. All rights reserved.</p>
+            <p>Designed with ❤️ by <a href="https://www.instagram.com/dhump.exe" target="_blank">Ali</a></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="final.js"></script>
+</body>
+</html>
